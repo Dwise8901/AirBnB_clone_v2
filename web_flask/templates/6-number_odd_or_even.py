@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-Build a Flask application
-"""
+""" Build a Flask application """
 from flask import Flask, escape, render_template
 
 app = Flask(__name__)
@@ -9,17 +7,13 @@ app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
 def hello_hbnb():
-    """
-    return a simple hello message
-    """
+    """ return a simple hello message """
     return "Hello HBNB!"
 
 
 @app.route('/hbnb', strict_slashes=False)
 def display_hbnb():
-    """
-    /hbnb web page
-    """
+    """ /hbnb web page """
     return "HBNB"
 
 
